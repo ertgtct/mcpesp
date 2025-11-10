@@ -48,8 +48,21 @@ lib_deps =
 const char* ssid = "YOUR_WIFI_SSID";
 const char* password = "YOUR_WIFI_PASSWORD";
 
+// LED pin for demonstration
+#define LED_PIN 8
+
 // Create MCP server instance
 Mcpesp mcpServer;
+
+void myToolCallback(JsonObject arguments, JsonObject result) {
+  bool state = arguments["enabled"].as<bool>(); // Name of the property is "enabled"
+  bool ledState = state;
+  
+  digitalWrite(LED_PIN, ledState ? LOW : HIGH); // LOW = ON for most ESP32 boards
+  
+  result["text"] = "LED turned " + String(state) + " successfully!";
+  Serial.println("LED state changed to: " + state);
+}
 
 void setup() {
   Serial.begin(115200);
@@ -242,7 +255,6 @@ All methods follow the JSON-RPC 2.0 specification and return appropriate respons
 
 ## License
 
-This library is licensed under the GNU General Public License v2.0 (GPLv2). See the [LICENSE](LICENSE) file for details.
 
 This library is based on the work from https://github.com/MrLaki5/ESP32-MCP-air-conditioner
 
