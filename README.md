@@ -242,6 +242,8 @@ All methods follow the JSON-RPC 2.0 specification and return appropriate respons
 
 ## License
 
+This library is licensed under the GNU General Public License v2.0 (GPLv2). See the [LICENSE](LICENSE) file for details.
+
 This library is based on the work from https://github.com/MrLaki5/ESP32-MCP-air-conditioner
 
 ## Contributing
