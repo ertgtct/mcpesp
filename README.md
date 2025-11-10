@@ -11,8 +11,7 @@ Mcpesp provides a complete implementation of the Model Context Protocol server f
 - **MCP Protocol Support**: Full implementation of MCP protocol (version 2025-03-26)
 - **Tool Registration**: Easily register custom tools with callback functions
 - **Schema Validation**: Built-in schema builder for defining tool input parameters
-- **HTTP Server**: Integrated WebServer for handling HTTP/JSON-RPC requests
-- **CORS Support**: Automatic CORS headers for web-based clients
+- **HTTP Server**: Integrates into the ESP32's WebServer for handling HTTP/JSON-RPC requests
 - **JSON-RPC 2.0**: Compatible with JSON-RPC 2.0 specification
 - **WiFi Integration**: Works with ESP32 WiFi capabilities
 
