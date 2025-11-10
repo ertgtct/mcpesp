@@ -8,7 +8,7 @@ Mcpesp provides a complete implementation of the Model Context Protocol server f
 
 ## Features
 
-- **MCP Protocol Support**: Full implementation of MCP protocol (version 2025-03-26)
+- **MCP Protocol Support**: Basic implementation of MCP protocol
 - **Tool Registration**: Easily register custom tools with callback functions
 - **Schema Validation**: Built-in schema builder for defining tool input parameters
 - **HTTP Server**: Integrates into the ESP32's WebServer for handling HTTP/JSON-RPC requests
@@ -250,4 +250,4 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ## Support
 
-For issues, questions, or contributions, please visit the project repository.
+For any bug reports or feature requests, please open an issue on the repository.
