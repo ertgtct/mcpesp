@@ -13,7 +13,7 @@ Mcpesp mcpServer;
 
 // Tool callback function for LED control
 void toggleLed(JsonObject arguments, JsonObject result) {
-  bool state = arguments["state"].as<bool>(); //.as<String>();
+  bool state = arguments["state"].as<bool>(); 
   bool ledState = state;
   
   digitalWrite(LED_PIN, ledState ? LOW : HIGH); // LOW = ON for most ESP32 boards
@@ -76,7 +76,6 @@ void setup() {
     "toggle_led",
     "Toggle the LED on or off",
     ledInSchema,
-    //ledOutSchema,
     toggleLed
   );
   
@@ -84,7 +83,6 @@ void setup() {
     "get_sensor_data",
     "Get sensor data (temperature, humidity, or both)",
     sensorInSchema,
-    //sensorOutSchema,
     getSensorData
   );
   
